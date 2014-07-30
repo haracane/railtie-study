@@ -1,5 +1,3 @@
-Original 
-
 # Install
 
     $ sudo yum install libxslt-dev libxml2-dev libsqlite3-dev #CentOS
@@ -15,3 +13,12 @@ Original
     $ bundle exec spork
 
     $ bundle exec rails s
+
+# Add Engine
+
+    $ rails plugin new my_engine --mountable
+    $ cd my_engine
+    $ vi my_engine.gemspec
+    $ bundle install
+    $ rails g rspec:install
+    $ rake spec
